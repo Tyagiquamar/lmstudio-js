@@ -41,7 +41,7 @@ export function createSystemBackendInterface() {
           /**
            * LM Studio build number
            */
-          build: z.number(),
+          build: z.number().int(),
         }),
       })
       .addRpcEndpoint("setExperimentFlag", {
